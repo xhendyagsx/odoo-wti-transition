@@ -1,0 +1,9 @@
+site_name: Odoo WTI Transition
+site_description: Documentation for Odoo WTI Transition
+site_url: https://xhendyagsx.github.io/odoo-wti-transition/
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
