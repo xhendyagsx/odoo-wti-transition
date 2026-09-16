@@ -1,4 +1,9 @@
 # Business Requirement Document (BRD)
+## Executive Overview
+Dokumen Persyaratan Bisnis (BRD) ini disusun sebagai panduan resmi untuk melakukan penyempurnaan teknik dan fungsional pada modul kustom *Expenses* di Odoo.sh v19. BRD ini berfungsi sebagai jembatan komunikasi antara tim operasional internal dengan Subject Matter Expert (SME) selaku pengembang sistem. Tujuan utamanya adalah memastikan bahwa seluruh penyesuaian kode yang dilakukan oleh developer dapat memfasilitasi kebutuhan tata kelola keuangan perusahaan secara presisi, meminimalkan risiko *human error*, serta menciptakan transparansi alur kerja dari tahap pengajuan hingga pembayaran akhir.
+
+Berdasarkan hasil uji coba pengguna (*user-testing*) yang dilakukan pada database replika (*neutralized database*), ditemukan beberapa kejanggalan kritis pada antarmuka pengguna (UI) dan logika *workflow*. Hasil pengujian menunjukkan adanya ketidaksinkronan status dokumen, di mana sistem mencatat dokumen telah disetujui manajer (*Manager Approved*) pada log kustom, padahal status inti Odoo masih tertahan sebagai *Draft*. Selain itu, penggunaan label tombol "TARGET ACQUIRED" dinilai menyesatkan dan tidak mencerminkan tindakan akuntansi standar untuk mengajukan dokumen (*Submitted*). Temuan-temuan inilah yang menjadi dasar urgensi dilakukannya perbaikan sebelum modul diimplementasikan pada database produksi.
+
 ## Kustomisasi Alur Persetujuan Pengeluaran (Expenses Approval Workflow) - Odoo.sh v19
 
 ### 1. Latar Belakang (Background)
