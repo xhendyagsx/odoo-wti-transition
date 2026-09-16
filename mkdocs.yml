@@ -7,3 +7,4 @@ theme:
 
 nav:
   - Home: index.md
+  - User Testing: user-testing/index.md
