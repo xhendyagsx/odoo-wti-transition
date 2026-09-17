@@ -7,4 +7,16 @@ theme:
 
 nav:
   - Home: index.md
-  - User Testing: user-testing/index.md
+  - User Testing: 
+    - Overview: user-testing/index.md
+    - Expenses: 
+      - Finding 001: user-testing/expenses/finding-001.md
+      - Finding 002: user-testing/expenses/finding-002.md
+      - Finding 003: user-testing/expenses/finding-003.md
+    - Sales: 
+      - Finding 001: user-testing/sales/finding-001.md
+    - Accounting: 
+      - Finding 001: user-testing/accounting/finding-001.md
+      - Finding 002: user-testing/accounting/finding-002.md
+  - Others: 
+    - Ringkasan: others/index.md
